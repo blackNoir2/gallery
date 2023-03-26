@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+
+:root {
+    --font-family-nunito: 'Nunito', sans-serif;
+}
+
+
+* {
+    
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-nunito);
+    text-decoration: none;
+    margin: 0;
+    overflow-x: hidden;
+    transition: .5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+
+h1 {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* The nav starts here */
+
+nav {
+    background: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav .container {
+    background: black;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav .links {
+    background: black;
+    display: flex;
+    gap: 6.2rem;
+    margin-right: 14rem;
+    opacity: 0.9;
+    padding-top: 1rem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+nav .links a {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav .links {
+    display: grid;
+    gap: 0.1rem;
+    height: 100%;
+    padding-bottom: 3rem;
+}
+
+/* The navbar ends here */
+
+/* 
+The banner for the site starts here */
+
+.banner {
+    font-size: 1.7rem;
+    margin-bottom: 7rem;
+    padding: 2rem;
+    padding-top: 7rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* 
+The banner for the site ends here */
+
+
+
+/* The button starts here */
+.button {
+    background: orange;
+  
+}
+
+.button,
+.visit-button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.visit-button {
+    background: darkgreen;
+}
+
+
+.button a {
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.button:hover,
+.visit-button:hover {
+    background: black;
+}
+
+
+.close-btn {
+    margin-bottom: 3rem;
+}
+
+
+
+/* The buttons starts here */
+
+
+/* The card start here */
+.card {
+    cursor: pointer;
+    display: flex;
+    flex-basis: 100%;
+    flex: 0 1 100%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    font-family: var(--font-family-nunito);
+    background: white;
+    text-align: center;
+}
+
+.card .header {
+    border-bottom: 1px solid black;
+    padding: 4rem;
+}
+
+.card .body {
+    padding: 2rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 54vh;
+    overflow: hidden;
+}
+
+.card .footer {
+    overflow: hidden;
+}
+
+.card h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+.card:hover {
+    border: 1px solid darkgreen;
+}
+
+/* The card ends here */
+
+
+
+/* Font-awesome starts here */
+
+.fa-solid {
+    font-size: 5.2rem;
+
+}
+
+.fa-solid:nth-child(1) {
+    padding-top: 2rem;
+}
+
+/* Font awesome ends here */
+
+
+/* 
+The links for the site */
+/* .links {
+    margin: auto;
+    top: -200rem;
+} */
+
+.links a {
+    background: white;
+    border: 1px solid;
+    color: black !important;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: auto;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    width: 95%;
+}
+
+.links a:hover {
+    background: lavender;
+}
+
+.links_active {
+    position: fixed;
+    top: 50px;
+}
+
+/* The links for the site end here */
+
+
+
+/* This will be used to show more information when the user clicks on the view more button
+This box will drop from the top display the information */
+
+.hobby-description,
+.movie-description,
+.website-description,
+.game-description {
+    background: white;
+    height: 100%;
+    padding: 2rem;
+    position: fixed;
+    overflow-y: scroll;
+    top: -2000rem;
+    transition: "1s" ease-in-out;
+    right: 0;
+    width: 40%;
+    
+}
+
+.sidebar_active {
+    top: 0;
+    transition: "1s" ease-out;
+    
+}
+
+.sidebar-paragraph {
+    height: 70vh;
+}
+/* The main image for the site */
+
+.main-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.body-img {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+/* 
+The main image for the site ends */
+
+
+
+/* 
+The menu and attributes of the menu */
+
+.menu {
+    display: flex;
+    gap: 5.5rem;
+    height: 50px;
+    justify-content: center;
+    overflow-y: hidden;
+    padding-top: 1rem;
+    width: 95%;
+}
+
+.menu a {
+    color: white;
+    font-family: var(--font-family-nunito);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.menu-icon-hidden {
+    display: none;
+}
+
+
+/* 
+The end of the attributes of the menu end here */
+
+/* The sections about, aspiration, projects */
+
+#about .container,
+#aspirations .container {
+    width: 40%;
+    margin: auto;
+    line-height: 2.5;
+    text-align: center;
+    font-family: var(--font-family-nunito);
+    margin-top: 5rem;
+}
+
+#about .container p {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+#aspirations {
+    background: lavender;
+}
+
+#aspirations .container {
+    background: white;
+    width: 70%;
+    padding: 9rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+#aspirations .container p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+#projects {
+    background: lavender;
+    padding-bottom: 0rem;
+    padding-top: 4rem;
+}
+
+#projects .container {
+    width: 50%;
+    padding: 0rem;
+    margin: auto;
+    height: 100%;
+}
+
+#projects .container img {
+    width: 100%;
+}
+
+#projects .container p {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-family: var(--font-family-nunito);
+}
+
+#projects>div>p {
+    text-align: center !important;
+}
+
+/* End project sections here */
+
+
+
+/* 
+The footer starts here  */
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+/* 
+The footer ends here */
+
+
+
+/* styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  
+    #about .container h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding-bottom: 0rem;
+    }
+
+    #about .container p {
+        font-size: 1.1rem;
+        margin-bottom: 4rem;
+        padding: 1rem !important;
+    }
+
+    #about .container,
+    #aspirations .container {
+        font-family: var(--font-family-nunito);
+        line-height: 2.5;
+        margin-top: 6rem;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #projects .container img {
+        width: 50%;
+    }
+
+    #projects .container {
+        width: 100%;
+    }
+
+    #projects .container h1 {
+        font-size: 2rem;
+    }
+
+    #projects .container p {
+        font-size: 1.1rem;
+        font-family: var(--font-family-nunito);
+        line-height: 1.9rem;
+        padding-bottom: 2rem;
+       
+        padding: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .banner {
+        font-size: 1rem;
+    }
+
+    .card .header {
+        border-bottom: 0;
+        padding-top: 5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        line-height: 2;
+        padding: 1rem !important;
+        font-family: var(--font-family-nunito);
+    }
+
+    h1 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        padding-top: 10rem;
+    }
+
+    
+    .menu {
+        height: 100%;
+        width: 50px;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav {
+        background: rgba(0, 0, 0, 1);
+        position: fixed;
+        width: 100%;
+    }
+
+    nav .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* styles for tablets */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    /* styles here */
+
+    #about .container,
+    #aspirations .container {
+       
+        font-family: var(--font-family-nunito);
+        line-height: 2;
+        text-align: center;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-top: 1rem;
+        width: 90%;
+    }
+
+    #projects .container {
+        margin: auto;
+        padding: 0rem;
+        width: 100%;
+       
+    }
+
+    #projects .container img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #projects .container p {
+        font-size: 1.1rem;
+        margin: auto;
+        padding-bottom: 1rem;
+        width: 90%;
+       
+    }
+
+    /* The class start here */
+    .card {
+        background: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-basis: 100%;
+        flex: 0 1 47%;
+        flex-direction: column;
+        font-family: var(--font-family-nunito);
+        margin: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .card .header {
+        border-bottom: 1px solid black;
+        padding: 1rem;
+    }
+
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+    }
+
+
+    nav {
+        background: rgba(0, 0, 0, 1);
+        position: fixed;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 540px) and (max-width: 540px) {
+
+    /* The sections starts here */
+    #projects .container img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #projects .container p {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    
+    /* The class start here */
+    .card h1 {
+        font-size: 1.2rem;
+    }
+
+    .card .body {
+        padding: 1rem;
+        line-height: 1.5;
+    }
+
+    /* The native html elements */
+
+    h1 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
+    }
+
+    a {
+        cursor: pointer!important;
+    }
+
+}
+
+
+@media screen and (max-width:620px) {
+
+    .sidebar {
+        width: 100%!important;
+    }
+    
+}
+
+@media only screen and (min-width:621px) and (max-width:992px) {
+
+    .sidebar {
+        width: 70%!important;
+    }
+    
+}
+/* styles for desktops */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* section starts here */
+
+    #about .container,
+    #aspirations .container {
+        font-family: var(--font-family-nunito);
+        line-height: 2;
+        margin: auto;
+        margin-top: 5rem;
+        text-align: center;
+        width: 70%;
+    }
+
+    #projects .container {
+        margin: auto;
+        padding-bottom: 5rem;
+        padding: 1rem;
+        width: 85%;
+    }
+
+    #projects .container img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #projects .container p {
+        font-size: 1.1rem;
+        padding-bottom: 2rem;
+    }
+   
+    /* The classes start here */
+
+    .card {
+        background: white;
+        display: flex;
+        flex-basis: 100%;
+        flex: 0 1 30%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .card .header {
+        padding: 1rem;
+    }
+
+    .card .body {
+        padding: 1rem;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .card:last-child {
+        display: flex;
+        flex: 0 1 96%;
+        margin-top: 2rem;
+    }
+
+    .card:last-child .header {
+        border-bottom: 1px solid black;
+        padding: 1rem;
+    }
+
+    .card:last-child .header img {
+        width: 25%;
+    }
+
+    .card h1 {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header img {
+        height: 150px;
+        width: 150px;
+    }
+
+   
+
+}
+
+/* styles for larger screens */
+@media only screen and (min-width: 1201px) {
+
+    #about .container,
+    #aspirations .container {
+       
+        line-height: 2;
+        margin-top: 5rem;
+        padding-bottom: 2rem;
+        width: 60%;
+    }
+
+    #projects .container img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    #projects .container {
+        margin: auto;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    #projects .container p {
+        font-size: 1.1rem;
+    }
+
+    /* The classes start here */
+
+    .card .header {
+        padding: 1rem;
+    }
+
+
+    /* native html elements */
+ 
+    h1 {
+        font-size: 1.5rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    /* the classes start here */
+    .card {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        background: white;
+        display: flex;
+        flex: 0 1 100%;
+        flex-direction: column;
+        font-family: var(--font-family-nunito);
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        gap: 1.2rem;
+        margin: auto;
+        width: 80%;
+    }
+
+
+
+}
